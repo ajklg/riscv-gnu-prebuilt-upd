@@ -22,9 +22,9 @@ jobs:
       - name: Build rv64-linux RISC-V Toolchain
         run: |
           git clone https://github.com/ajklg/riscv-gnu-toolchain-upd.git
-          cd riscv-gnu-toolchain
-          ./configure --prefix=/opt/riscv
+          cd riscv-gnu-toolchain-upd
           git submodule sync
+          ./configure --prefix=/opt/riscv
           make linux
 
       - name: Upload Artifact
