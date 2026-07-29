@@ -23,8 +23,7 @@ jobs:
         run: |
           git config --global http.lowSpeedLimit 1000
           git config --global http.lowSpeedTime 60
-          https://github.com/riscv-collab/riscv-gnu-toolchain.git
-          gh repo clone riscv-collab/riscv-gnu-toolchain
+          git clone https://github.com/riscv-collab/riscv-gnu-toolchain.git
           cd riscv-gnu-toolchain
           ./configure --prefix=/opt/riscv
           make linux
