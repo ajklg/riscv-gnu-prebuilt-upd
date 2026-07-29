@@ -1,6 +1,3 @@
-[submodule "riscv-toolchain/riscv-gnu-toolchain"]
-	path = riscv-toolchain/riscv-gnu-toolchain
-	url = https://github.com/riscv-collab/riscv-gnu-toolchain.git
 [submodule "riscv-gnu-toolchain-upd"]
 	path = riscv-gnu-toolchain-upd
 	url = https://github.com/ajklg/riscv-gnu-toolchain-upd.git
