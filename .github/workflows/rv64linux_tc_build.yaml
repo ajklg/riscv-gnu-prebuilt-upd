@@ -21,7 +21,7 @@ jobs:
 
       - name: Build rv64-linux RISC-V Toolchain
         run: |
-          git clone https://github.com/riscv-collab/riscv-gnu-toolchain.git
+          git clone https://github.com/ajklg/riscv-gnu-toolchain-upd.git
           cd riscv-gnu-toolchain
           ./configure --prefix=/opt/riscv
           git submodule sync
