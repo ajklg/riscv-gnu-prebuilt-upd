@@ -21,8 +21,9 @@ jobs:
 
       - name: Build RISC-V Toolchain
         run: |
-          git clone https://github.com/riscv/riscv-gnu-toolchain
-          cd riscv-gnu-toolchain
+          git clone https://github.com/ajklg/riscv-gnu-toolchain-upd.git
+          cd riscv-gnu-toolchain-upd
+          git submodule sync
           ./configure --prefix=/opt/riscv --enable-multilib
           make -j $(nproc) linux
 
