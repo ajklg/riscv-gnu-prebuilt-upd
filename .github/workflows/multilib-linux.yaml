@@ -25,7 +25,8 @@ jobs:
           cd riscv-gnu-toolchain-upd
           git submodule sync
           ./configure --prefix=/opt/riscv --enable-multilib
-          make -j $(nproc) linux
+          # make -j $(nproc) linux
+          make -j $(nproc)
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
